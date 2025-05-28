@@ -1,4 +1,4 @@
-<article align="center">
+<article align="center" style="margin-bottom: 20px;">
     <h1 
         align="center"
         itemprop="title"
@@ -10,7 +10,7 @@
 
 <div
     align="center"
-    style="font-size: 18px; margin-bottom: 20px;"
+    style="font-size: 18px; margin-bottom: 30px;"
 >
     <a href="" target='_blank'>Jing Ma</a><sup>1</sup>&emsp;
     <a href="" target='_blank'>Hanlin Li</a><sup>1</sup>&emsp;
