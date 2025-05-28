@@ -10,7 +10,7 @@
 
 <div
     align="center"
-    style="font-size: 18px; margin-bottom: 30px;"
+    style="font-size: 18px; margin-bottom: 20px;"
 >
     <a href="" target='_blank'>Jing Ma</a><sup>1</sup>&emsp;
     <a href="" target='_blank'>Hanlin Li</a><sup>1</sup>&emsp;
@@ -28,6 +28,9 @@
 
 
 ## Introduction
+
+[![Website](https://img.shields.io/badge/Website-online-27AE60.svg)]()
+[![Arxiv](https://img.shields.io/badge/Arxiv-Preprint-A42C24.svg)]()
 
 This repository contains the official implementation of [PTTA: Purifying Malicious Samples for Test-Time Model Adaptation]() published in [ICML 2025](https://icml.cc/).
 Please check the [paper]() for more details.
