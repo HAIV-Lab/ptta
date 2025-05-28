@@ -1,12 +1,41 @@
-# PTTA: Purifying Malicious Samples for Test-Time Model Adaptation
-Test-Time Adaptation (TTA) enables deep neural networks to adapt to arbitrary distributions during inference. 
-Existing TTA algorithms generally tend to select benign samples that help achieve robust online prediction and stable self-training. 
-Although malicious samples that would undermine the model's optimization should be filtered out, it also leads to a waste of test data. 
-To alleviate this issue, we focus on how to make full use of the malicious test samples for TTA by transforming them into benign ones, and propose a plug-and-play method, PTTA. 
-The core of our solution lies in the purification strategy, which retrieves benign samples having opposite effects on the objective function to perform Mixup with malicious samples, based on a saliency indicator for encoding benign and malicious data. 
-This strategy results in effective utilization of the information in malicious samples and an improvement of the models' online test accuracy. 
-In this way, we can directly apply the purification loss to existing TTA algorithms without the need to carefully adjust the sample selection threshold. 
-Extensive experiments on four types of TTA tasks and classification, segmentation, and adversarial defense demonstrate the effectiveness of our method.
+<article align="center">
+    <h1 
+        itemprop="title"
+        style="font-size: 30px; font-weight: bold; margin-bottom: 20px;"
+    >
+    PTTA: <br/>Purifying Malicious Samples for Test-Time Model Adaptation
+    </h1>
+</article>
+
+<div
+    align="center"
+    style="font-size: 18px; margin-bottom: 20px;"
+>
+    <a href="" target='_blank'>Jing Ma</a><sup>1</sup>&emsp;
+    <a href="" target='_blank'>Hanlin Li</a><sup>1</sup>&emsp;
+    <a href="" target='_blank'>Xiang Xiang</a><sup>1,2</sup>
+</div>
+
+<div 
+    align="center"
+    style="font-size: 16px; margin-bottom: 20px;"
+>
+<sup>1</sup>Huazhong University of Science and Technology (HUST)&emsp;
+
+<sup>2</sup>Peng Cheng National Lab&emsp;
+</div>
+
+
+## Introduction
+
+This repository contains the official implementation of [PTTA: Purifying Malicious Samples for Test-Time Model Adaptation]() published in [ICML 2025](https://icml.cc/).
+Please check the [paper]() for more details.
+
+## News
+
+- **May 2025**:
+🎉 Our paper (PTTA) has been accepted by [ICML 2025](https://icml.cc/).
+
 
 ## Installation
 In our environment, the requirements are:
@@ -69,7 +98,8 @@ python main_lifelong.py --data /data/datasets/ImageNet/ --data_corruption /data/
 - algorithm: You can replace it with `ptta_eta` `ptta_eata` `ptta_deyo`.
 
 
-## Experiments in Table 1
+## More Experiments
+
 **For Pixel Feature Logit comparison**, replace --algorithm with `ptta_tent_pixel` `ptta_tent_feature` `ptta_eta_pixel` `ptta_eta_feature` `ptta_deyo_pixel` `ptta_deyo_feature`.
 
 **For ID retrieval**:
