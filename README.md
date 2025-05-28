@@ -1,5 +1,6 @@
 <article align="center">
     <h1 
+        align="center"
         itemprop="title"
         style="font-size: 30px; font-weight: bold; margin-bottom: 20px;"
     >
