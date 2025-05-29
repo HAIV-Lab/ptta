@@ -12,9 +12,9 @@
     align="center"
     style="font-size: 18px; margin-bottom: 20px;"
 >
-    <a href="" target='_blank'>Jing Ma</a><sup>1</sup>&emsp;
-    <a href="" target='_blank'>Hanlin Li</a><sup>1</sup>&emsp;
-    <a href="" target='_blank'>Xiang Xiang</a><sup>1,2</sup>
+    <a href="https://jimm0011.github.io/" target='_blank'>Jing Ma</a><sup>1</sup>&emsp;
+    <a href="https://vain222.github.io/" target='_blank'>Hanlin Li</a><sup>1</sup>&emsp;
+    <a href="https://eglxiang.github.io/" target='_blank'>Xiang Xiang</a><sup>1,2</sup>
 </div>
 
 <div 
@@ -34,6 +34,35 @@
 
 This repository contains the official implementation of [PTTA: Purifying Malicious Samples for Test-Time Model Adaptation]() published in [ICML 2025](https://icml.cc/).
 Please check the [paper]() for more details.
+
+#### TL;DR (Too Long; Didn’t Read) :
+
+> Rather than selecting and discarding malicious samples for test-time model adaptation, why not purify them into benign ones?
+
+
+
+<details>
+    <summary>
+        <b>Abstract :</b>
+    </summary>
+
+    Test-Time Adaptation (TTA) enables deep neural networks to adapt to arbitrary distributions during inference. Existing TTA algorithms generally tend to select benign samples that help achieve robust online prediction and stable self-training. Although malicious samples that would undermine the model's optimization should be filtered out, it also leads to a waste of test data. To alleviate this issue, we focus on how to make full use of the malicious test samples for TTA by transforming them into benign ones, and propose a plug-and-play method, PTTA. The core of our solution lies in the purification strategy, which retrieves benign samples having opposite effects on the objective function to perform Mixup with malicious samples, based on a saliency indicator for encoding benign and malicious data. This strategy results in effective utilization of the information in malicious samples and an improvement of the models' online test accuracy. In this way, we can directly apply the purification loss to existing TTA algorithms without the need to carefully adjust the sample selection threshold. Extensive experiments on four types of TTA tasks as well as classification, segmentation, and adversarial defense demonstrate the effectiveness of our method.
+</details>
+
+
+
+<details>
+    <summary>
+        <b>Lay Summary :</b>
+    </summary>
+
+    How can deep neural networks evolve through self-supervision without human intervention? This is a recent research trend, but difficult to solve well due to real-world complexity.
+
+    Our paper identifies the "malicious sample hazards" as an obstacle to model self-evolution. Prior solutions typically select and filter out malicious samples that negatively impact model optimization, which also reduces utilization of already limited data. Rather than discarding them, why not purify malicious samples into benign ones? Surprisingly, we found that superimpose benign samples—which exert the most opposite influence on the objective function—onto malicious samples effectively mitigates these hazards. 
+
+    Our findings reveal a new direction: using purification strategies to boost sample utilization during autonomous machine learning. This enables stable and efficient self-supervised evolution of deep neural networks.
+</details>
+
 
 ## News
 
