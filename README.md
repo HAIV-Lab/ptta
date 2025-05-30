@@ -46,7 +46,14 @@ Please check the [paper]() for more details.
     <b>Abstract :</b>
 </summary>
 
-<div class='abstract-container'>
+<div style="
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+    }
+">
 <div>
 Test-Time Adaptation (TTA) enables deep neural networks to adapt to arbitrary distributions during inference. Existing TTA algorithms generally tend to select benign samples that help achieve robust online prediction and stable self-training. Although malicious samples that would undermine the model's optimization should be filtered out, it also leads to a waste of test data. To alleviate this issue, we focus on how to make full use of the malicious test samples for TTA by transforming them into benign ones, and propose a plug-and-play method, PTTA. The core of our solution lies in the purification strategy, which retrieves benign samples having opposite effects on the objective function to perform Mixup with malicious samples, based on a saliency indicator for encoding benign and malicious data. This strategy results in effective utilization of the information in malicious samples and an improvement of the models' online test accuracy. In this way, we can directly apply the purification loss to existing TTA algorithms without the need to carefully adjust the sample selection threshold. Extensive experiments on four types of TTA tasks as well as classification, segmentation, and adversarial defense demonstrate the effectiveness of our method.
 </div>
@@ -59,23 +66,6 @@ Test-Time Adaptation (TTA) enables deep neural networks to adapt to arbitrary di
 </div>
 </div>
 </details>
-
-
-<style>
-
-.abstract-container {
-    display: flex;
-    flex-direction: row;
-}
-
-@media (max-width: 700px) {
-    .abstract-container {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-</style>
 
 
 
