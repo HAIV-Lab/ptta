@@ -49,7 +49,7 @@ Please check the [paper]() for more details.
 <div style="
     display: flex;
     flex-direction: row;
-    @media (max-width: 700px) {
+    @media (max-width: 400px) {
         display: flex;
         flex-direction: column;
     }
