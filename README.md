@@ -29,7 +29,7 @@
 
 ## Introduction
 
-[![Website](https://img.shields.io/badge/Website-Online-27AE60.svg)]()
+[![Website](https://img.shields.io/badge/Website-Online-27AE60.svg)](https://jimm0011.github.io/PTTA-proj/)
 [![Arxiv](https://img.shields.io/badge/Arxiv-Preprint-A42C24.svg)]()
 
 This repository contains the official implementation of [PTTA: Purifying Malicious Samples for Test-Time Model Adaptation]() published in [ICML 2025](https://icml.cc/Conferences/2025).
