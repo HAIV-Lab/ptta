@@ -23,7 +23,7 @@
 >
 <sup>1</sup>Huazhong University of Science and Technology (HUST)&emsp;
 
-<sup>2</sup>Peng Cheng National Lab&emsp;
+<sup>2</sup>Peng Cheng National Laboratory&emsp;
 </div>
 
 
