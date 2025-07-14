@@ -30,10 +30,10 @@
 ## Introduction
 
 [![Website](https://img.shields.io/badge/Website-Online-27AE60.svg)](https://jimm0011.github.io/PTTA-proj/)
-[![Arxiv](https://img.shields.io/badge/Arxiv-Preprint-A42C24.svg)]()
+[![Paper](https://img.shields.io/badge/Paper-ICML2025-A42C24.svg)](https://icml.cc/virtual/2025/poster/45190)
 
-This repository contains the official implementation of [PTTA: Purifying Malicious Samples for Test-Time Model Adaptation]() published in [ICML 2025](https://icml.cc/Conferences/2025).
-Please check the [paper]() for more details.
+This repository contains the official implementation of [PTTA: Purifying Malicious Samples for Test-Time Model Adaptation](https://icml.cc/virtual/2025/poster/45190) published in [ICML 2025](https://icml.cc/Conferences/2025).
+Please check the [paper](https://openreview.net/forum?id=SznX4yic20) for more details.
 
 #### TL;DR (Too Long; Didn’t Read) :
 
@@ -89,7 +89,7 @@ Our findings reveal a new direction: using purification strategies to boost samp
 ## News
 
 - **May 2025**:
-🎉 Our paper (PTTA) has been accepted by [ICML 2025](https://icml.cc/).
+🎉 Our paper (PTTA) has been accepted by [ICML 2025](https://icml.cc/virtual/2025/poster/45190).
 
 
 ## Installation
